@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #dddddd;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #f74bc1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(/assets/img/Banner\ para\ Linkedin\ desenvolvedor\ fullsatck.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #141833;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-inline: 15px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  gap: 20px;
+  flex: 1;
+}
+
+main {
+  flex: 3;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #38b3ba;
+  border-radius: 5px;
+}
+
+#about .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#about .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#articles {
+  margin-bottom: 0;
+}
+
+article {
+  background: #38b3ba;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+aside {
+  flex: 1;
+  background: #38b3ba;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  display: block;
+  background: #408185;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+aside ul li a:hover {
+  background: #38b3ba;
+  border-color: #45b6cad7;
+}
+
+footer {
+  background: #141833;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
